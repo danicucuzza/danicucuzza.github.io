@@ -188,24 +188,24 @@
     font-weight: 600;
 }
 
-/* studies page */
-.studies{
+/* resume page */
+.resume{
     padding: 5rem 0 2.5rem 0;
 }
 
 
-.studies > .text{
+.resume > .text{
     width: 70%;
     margin: 1.5rem auto;
     text-align: center;
 }
-.studies .item{
+.resume .item{
     padding: 0 2.5rem;
     margin: 2rem;
     border-left: 1px solid var(--nero);
     position: relative;
 }
-.studies .item > span{
+.resume .item > span{
     background: var(--nero);
     border-radius: 15px;
     padding: 0.25rem 0.7rem;
@@ -213,20 +213,20 @@
     font-size: 0.8rem;
     font-weight: 600;
 }
-.studies .item h2{
+.resume .item h2{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.2rem;
 }
-.studies .item h2 span{
+.resume .item h2 span{
     font-size: 1rem;
     color: #d0d0d0;
 }
-.studies .item .text{
+.resume .item .text{
     font-size: 1rem;
     padding-bottom: 0;
 }
-.studies .icon{
+.resume .icon{
     position: absolute;
     top: 0;
     width: 50px;
@@ -629,8 +629,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    /* studies */
-    .studies .row{
+    /* resume */
+    .resume .row{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
