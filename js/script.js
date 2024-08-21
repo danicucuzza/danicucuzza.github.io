@@ -43,6 +43,6 @@ function openWhatsApp(phoneNumber) {
 }
 
 function descargarCV() {
-    var rutaCV = '/resources/pdf/cvCucuzza.pdf';
+    var rutaCV = '/resources/pdf/DanielCucuzza.pdf';
     window.open(rutaCV, '_blank');
 }
