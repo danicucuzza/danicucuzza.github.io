@@ -170,23 +170,39 @@
 
 /* about page */
 
-.about-content li{
+.about-content {
     display: flex;
-    margin: 0.6rem 0px;
-    justify-content: right;
-}
-.about .btn{
-    margin: 2.5rem auto 1rem auto;
-    display: block;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
 }
 
-.about-content li span{
-    flex: 0.4;
+.about-content li {
+    display: flex;
+    margin: 0.6rem 0;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    width: 100%; /* Asegura que el elemento ocupe todo el ancho */
 }
-.about-content li span:first-child{
+
+.about-content li span {
+    flex: 0; /* Cambiado a 0 para no limitar el ancho del primer span */
+    margin-right: 10px; /* Espacio entre las etiquetas y los valores */
+}
+
+.about-content li span:last-child {
+    flex-grow: 1; /* Permite que el valor ocupe el espacio restante */
+}
+
+.about-content li span:first-child {
     color: #fff;
     font-weight: 600;
 }
+
+.about .btn {
+    margin: 2.5rem auto 1rem auto;
+    display: block;
+    text-align: center; /* Alinea el texto del botón al centro */
+}
+
 
 /* resume page */
 .resume{
@@ -324,7 +340,7 @@
 }
 /* justar dependiendo el porcentaje */
 .skills .item-text .w-70{ 
-    margin-left: 65%;
+    margin-left: 20%;
 }
 .progress{
     margin: 0.8rem 0;
@@ -341,9 +357,37 @@
     border-bottom-right-radius: 2px;
 }
 /* ajustar dependiendo el porcentaje */
+.progress-bar.w-10{
+    width: 10%;
+}
+.progress-bar.w-20{
+    width: 20%;
+}
+.progress-bar.w-30{
+    width: 30%;
+}
+.progress-bar.w-40{
+    width: 40%;
+}
+.progress-bar.w-50{
+    width: 50%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
 .progress-bar.w-70{
     width: 70%;
 }
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-100{
+    width: 100%;
+}
+
 /* projects*/
 /* .projects{
     padding: 5rem 0 2.5rem 0;
@@ -398,9 +442,29 @@
     opacity: 0.9;
 }
 /* blog */
+
+.blog .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Añadido para espacio entre items */
+}
+
+/* .blog .item {
+    flex: 1 1 calc(33.33% - 2rem); /* Asegura que se alineen 3 por fila 
+    box-sizing: border-box;
+    max-width: 33%; /* Limita el ancho de los elementos 
+} */
+
+.blog .item-img video, .blog .item-img img {
+    width: 100%;
+    height: auto;
+}
+
 .blog{
     padding: 5rem 0 2.5rem 0;
 }
+
 .blog > .text{
     width: 70%;
     margin: 1.5rem auto;
