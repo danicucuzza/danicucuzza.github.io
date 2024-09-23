@@ -94,11 +94,11 @@
                 </li>
                 <li class="text">
                   <span>Email: </span>
-                  <span>danielmcucuzza@gmail.com</span>
+                  <span onclick="copyToClipboard('danielmcucuzza@gmail.com')">danielmcucuzza@gmail.com</span>
                 </li
                 ><li class="text">
                   <span>Télefono: </span>
-                  <span>+54 11-6455-7353</span>
+                  <span onclick="copyToClipboard('1164557353')">+54 11-6455-7353</span>
                 </li>
               </ul>
             </div>
@@ -109,14 +109,12 @@
        <!-- resume page -->
     <section class="resume container" id="estudios">
         <div class="title">
-            <h2>studies</h2>
             <div>
                 <h2>Estudios</h2>
             </div>
         </div>
 
-        <p class="text">Actualmente, estoy cursando la Tecnicatura Superior en Análisis de Sistemas, donde he desarrollado sólidos conocimientos en metodologías ágiles, paradigmas de programación y gestión de proyectos, entre otros aspectos. Me encuentro en el último año de la carrera y, además, me capacito constantemente de forma autodidacta.</p>
-
+        <p class="text">Actualmente, estoy cursando el último año de la Tecnicatura Superior en Análisis de Sistemas, con solo cuatro materias pendientes. He adquirido conocimientos en análisis y diseño de sistemas, programación orientada a objetos, bases de datos relacionales, desarrollo web, y uso de metodologías ágiles como Scrum. Además, me capacito constantemente de forma autodidacta para estar al día con las últimas tecnologías.
         <div class="row">
             <div class="item">
                 <div class="icon">
@@ -240,12 +238,13 @@
     <!-- skills page -->
     <section class="skills container" id="skills">
         <div class="title">
-            <h2>my skills</h2>
             <div>
                 <h2>Habilidades</h2>
             </div>
         </div>
-            <p class="text">Estos son algunos de los lenguajes y habilidades que he desarrollado.</p>
+            <p class="text">
+                A lo largo de mi experiencia, he trabajado con diversas tecnologías y herramientas que me han permitido enfrentar distintos desafíos y desarrollar soluciones eficientes. He tenido la oportunidad de aplicar estos conocimientos en una variedad de proyectos, lo que me ha permitido consolidar una base sólida en áreas clave del desarrollo de software.
+            </p>
         <div class="row">
             <div class="item">
                 <div class="item-text">
@@ -349,6 +348,16 @@
 
             <div class="item">
                 <div class="item-text">
+                    <span>Scrum <i class="fab fa-trello"></i></span>
+                    <span class="w-90"></span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar w-90"></div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-text">
                     <span>Trabajo en equipo <i class="fa fa-handshake"></i></i></i></span>
                     <span class="w-100"></span>
                 </div>
@@ -384,14 +393,13 @@
      <!-- blog page -->
      <section class="blog container" id="proyectos">
         <div class="title">
-            <h2>projects</h2>
             <div>
                 <h2>Mis Proyectos</h2>
             </div>
         </div>
     
         <p class="text">
-            Estos son algunos de los proyectos que he realizado, utilizando Java, JavaScript, HTML, CSS, entre otros. Uno de estos proyectos es mi propio portafolio, que estás observando. Todos ellos requirieron mucha dedicación, cuidando cada detalle, como, por ejemplo, asegurándome de que sean completamente responsive al 100%.
+            Estos son algunos de los proyectos que he desarrollado utilizando tecnologías como Java, Spring Boot, MySQL, JavaScript, HTML, CSS, entre otras. Para su desarrollo, he empleado herramientas como Git, Postman y Docker, asegurando una implementación robusta y eficiente. Cada proyecto refleja mi compromiso con la calidad, la eficiencia y la atención meticulosa a los detalles.
         </p>
 
         <div class="row">
@@ -404,7 +412,7 @@
                 <div class="item-content">
                     <span>WinniLeven
                     </span>
-                    <h2>Proyeto final para la materia 'Paradigmas de programación'</h2>
+                    <h2>Juego de Fútbol 1 vs. 1</h2>
                     <p class="text">
                         Este es un proyecto Maven basado en un mini partido de fútbol 1 vs. 1, desarrollado con Java. El usuario controla al protagonista Messa mediante las teclas W, A, S, D, y patea al arco con la barra espaciadora. El arco está defendido por un Cono que observa atentamente la pelota, mientras Rolando, del equipo contrario, intenta quitarle la pelota y marcar goles por toda la cancha.
                      </p>
@@ -432,7 +440,7 @@
                 <div class="item-content">
                     <span>TuriBue
                     </span>
-                    <h2>E-commerce de Turismo (Proyecto para la materia 'Taller III")</h2>
+                    <h2>E-commerce de Turismo</h2>
                     <p class="text">
                         Una plataforma en línea para gestionar y reservar paquetes turísticos. <br>Este proyecto permite a los usuarios explorar destinos, seleccionar paquetes y realizar reservas.
                         Gestión de Paquetes: Crear, editar, y eliminar paquetes turísticos.
@@ -480,7 +488,6 @@
     <!-- contact page -->
     <section class="contact container" id="contacto">
         <div class="title">
-            <h2>contact</h2>
             <div>
                 <h2>Contacto</h2>
             </div>
@@ -491,7 +498,6 @@
 
         <div class="row">
             <div class="col-left">
-                <h2>no dudes en contactarme</h2>
                 <div class="contact-info" onclick="copyToClipboard('danielmcucuzza@gmail.com')">
                     <span><i class="fas fa-envelope-open"></i></span>
                     <h3>

@@ -3,7 +3,7 @@
     --sans: 'Open Sans', sans-serif;
     --green: #72b626;
     --blue: #6ebee4;
-    --black: #111;
+    --black: #000000fd;
     --nero: #252525;
     --transition: all 0.4s ease
 }
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p{
 .title > h2{
     font-size: 3rem;
     font-family: var(--poppins);
-    text-align: center;
+    text-align: initial;
     text-transform: capitalize;
     font-weight: 900;
     color: var(--nero);
